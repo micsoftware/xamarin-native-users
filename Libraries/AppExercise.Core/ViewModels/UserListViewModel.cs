@@ -9,7 +9,7 @@ using MvvmCross.ViewModels;
 using AppExercise.Core.Interface;
 using AppExercise.Core.Models;
 using AppExercise.Core.ViewModels.ItemViewModels;
-using AppExercise.Services.Todo;
+using AppExercise.Services.Users;
 
 namespace AppExercise.Core.ViewModels
 {
@@ -36,7 +36,7 @@ namespace AppExercise.Core.ViewModels
             //Fake Data
             Users = null;
             //var dialogService = Mvx.Resolve<IDialogService>();
-            var service = Mvx.IoCProvider.Resolve<ITodoService>();
+            var service = Mvx.IoCProvider.Resolve<IUserService>();
             //var dialog = dialogService.ShowProgress();
             var result = await service.GetUserListsAsync();
 

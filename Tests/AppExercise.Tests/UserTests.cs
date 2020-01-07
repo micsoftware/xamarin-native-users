@@ -5,9 +5,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace AppExercise.Tests
 {
     [TestClass]
-    public class PasswordStringTests
+    public class UserTests
     {
-        public PasswordStringTests()
+        public UserTests()
         {
         }
 

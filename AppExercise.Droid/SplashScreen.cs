@@ -17,6 +17,7 @@ using MvvmCross.Platforms.Android.Core;
 using MvvmCross.Platforms.Android.Views;
 using AppExercise.Core.Interface;
 using AppExercise.Services.Todo;
+using AppExercise.Services.Users;
 
 namespace AppTodo.Droid
 {
@@ -36,7 +37,7 @@ namespace AppTodo.Droid
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            Mvx.IoCProvider.RegisterSingleton<ITodoService>(() => new TodoService());
+            Mvx.IoCProvider.RegisterSingleton<IUserService>(() => new UserService());
             Mvx.IoCProvider.RegisterSingleton<IDialogService>(() => new DialogService());
         }
 

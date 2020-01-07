@@ -4,7 +4,7 @@ using MvvmCross.IoC;
 using MvvmCross.Plugin;
 using MvvmCross.ViewModels;
 using AppExercise.Core.ViewModels;
-using AppExercise.Services.Todo;
+using AppExercise.Services.Users;
 
 namespace AppExercise.Core
 {

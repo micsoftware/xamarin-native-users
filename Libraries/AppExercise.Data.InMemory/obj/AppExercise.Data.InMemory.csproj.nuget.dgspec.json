@@ -1,0 +1,130 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Data.InMemory/AppExercise.Data.InMemory.csproj": {}
+  },
+  "projects": {
+    "/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Core/AppExercise.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Core/AppExercise.Core.csproj",
+        "projectName": "TodoApp.Core",
+        "projectPath": "/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Core/AppExercise.Core.csproj",
+        "packagesPath": "/Users/judemartin/.nuget/packages/",
+        "outputPath": "/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Core/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/judemartin/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "MvvmCross": {
+              "target": "Package",
+              "version": "[6.2.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Data.InMemory/AppExercise.Data.InMemory.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Data.InMemory/AppExercise.Data.InMemory.csproj",
+        "projectName": "AppExercise.Data.InMemory",
+        "projectPath": "/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Data.InMemory/AppExercise.Data.InMemory.csproj",
+        "packagesPath": "/Users/judemartin/.nuget/packages/",
+        "outputPath": "/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Data.InMemory/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/judemartin/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Core/AppExercise.Core.csproj": {
+                "projectPath": "/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Core/AppExercise.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

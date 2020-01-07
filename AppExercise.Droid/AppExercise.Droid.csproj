@@ -14,7 +14,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -26,7 +25,6 @@
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
     <JavaMaximumHeapSize></JavaMaximumHeapSize>
-    <AndroidSupportedAbis>arm64-v8a;armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -92,11 +90,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\UserListView.cs" />
-    <Compile Include="Views\TodoDetailView.cs" />
     <Compile Include="Interfaces\DialogService.cs" />
     <Compile Include="Controls\StrikeStyleTextBinding.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="CustomBindings\ViewVisibilityByContentBinding.cs" />
+    <Compile Include="Views\CreateUserView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

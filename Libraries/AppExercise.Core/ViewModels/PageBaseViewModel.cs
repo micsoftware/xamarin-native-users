@@ -3,7 +3,7 @@ using MvvmCross.Commands;
 using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
 using AppExercise.Core.Localization;
-using AppExercise.Services.Todo;
+using AppExercise.Services.Users;
 
 namespace AppExercise.Core.ViewModels
 {

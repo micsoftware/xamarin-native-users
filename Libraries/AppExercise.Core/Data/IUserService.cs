@@ -6,7 +6,7 @@ using AppExercise.Core.Models;
 
 namespace AppExercise.Services.Users
 {
-    public interface ITodoService
+    public interface IUserService
     {
         Task<IList<Core.Models.User>> GetUserListsAsync();
         Task CreateListAsync(Core.Models.User todoList);

@@ -2,7 +2,7 @@
 using MvvmCross.Commands;
 using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
-using AppExercise.Services.Todo;
+using AppExercise.Services.Users;
 
 namespace AppExercise.Core.ViewModels
 {

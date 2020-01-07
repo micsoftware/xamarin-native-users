@@ -1,0 +1,13 @@
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Tests/AppExercise.Tests/obj/Debug/netcoreapp2.0/AppExercise.Tests.csprojAssemblyReference.cache
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Tests/AppExercise.Tests/obj/Debug/netcoreapp2.0/AppExercise.Tests.AssemblyInfoInputs.cache
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Tests/AppExercise.Tests/obj/Debug/netcoreapp2.0/AppExercise.Tests.AssemblyInfo.cs
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Tests/AppExercise.Tests/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Tests/AppExercise.Tests/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Tests/AppExercise.Tests/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Tests/AppExercise.Tests/bin/Debug/netcoreapp2.0/AppExercise.Tests.deps.json
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Tests/AppExercise.Tests/bin/Debug/netcoreapp2.0/AppExercise.Tests.runtimeconfig.json
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Tests/AppExercise.Tests/bin/Debug/netcoreapp2.0/AppExercise.Tests.runtimeconfig.dev.json
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Tests/AppExercise.Tests/bin/Debug/netcoreapp2.0/AppExercise.Tests.dll
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Tests/AppExercise.Tests/bin/Debug/netcoreapp2.0/AppExercise.Tests.pdb
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Tests/AppExercise.Tests/obj/Debug/netcoreapp2.0/AppExercise.Tests.dll
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Tests/AppExercise.Tests/obj/Debug/netcoreapp2.0/AppExercise.Tests.pdb

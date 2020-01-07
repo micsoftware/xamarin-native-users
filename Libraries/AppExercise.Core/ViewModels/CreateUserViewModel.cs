@@ -7,7 +7,7 @@ using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
 using AppExercise.Core.Interface;
 using AppExercise.Core.Models;
-using AppExercise.Services.Todo;
+using AppExercise.Services.Users;
 
 namespace AppExercise.Core.ViewModels
 {
@@ -32,7 +32,7 @@ namespace AppExercise.Core.ViewModels
                         ValidatePassword = ValidatePasswordText(mModel.Password);
                         if (string.IsNullOrEmpty(mValidatePassword))
                         {
-                            var service = Mvx.IoCProvider.Resolve<ITodoService>();
+                            var service = Mvx.IoCProvider.Resolve<IUserService>();
                             service.AddUserToListAsync(mModel);
                             _navigationService.Close(this);
                         }
@@ -50,7 +50,7 @@ namespace AppExercise.Core.ViewModels
                     var dialogService = Mvx.IoCProvider.Resolve<IDialogService>();
                     dialogService.CustomAlert("Do you want to delete this?", "Todo", () =>
                       {
-                            var service = Mvx.IoCProvider.Resolve<ITodoService>();
+                            var service = Mvx.IoCProvider.Resolve<IUserService>();
                             service.RemoveUserFromListAsync(mModel);
                             _navigationService.Close(this);
                       });

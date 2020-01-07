@@ -3,19 +3,20 @@ using System.Linq;
 using System.Threading.Tasks;
 using AppExercise.Core;
 using AppExercise.Core.Models;
+using AppExercise.Services.Users;
 
 namespace AppExercise.Services.Todo
 {
-    public class TodoService : ITodoService
+    public class UserService : IUserService
     {
         private readonly IRepository<User> _todoUserRepository;
 
-        public TodoService(IRepository<User> todoUserRepository)
+        public UserService(IRepository<User> todoUserRepository)
         {
             _todoUserRepository = todoUserRepository;
         }
 
-        public TodoService()
+        public UserService()
         {
         }
 

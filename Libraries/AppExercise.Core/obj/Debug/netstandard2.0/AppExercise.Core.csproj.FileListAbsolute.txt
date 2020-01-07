@@ -1,0 +1,9 @@
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Core/obj/Debug/netstandard2.0/AppExercise.Core.Localization.AppResources.resources
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Core/obj/Debug/netstandard2.0/AppExercise.Core.csproj.GenerateResource.cache
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Core/obj/Debug/netstandard2.0/AppExercise.Core.AssemblyInfoInputs.cache
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Core/obj/Debug/netstandard2.0/AppExercise.Core.AssemblyInfo.cs
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Core/bin/Debug/netstandard2.0/TodoApp.Core.deps.json
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Core/bin/Debug/netstandard2.0/TodoApp.Core.dll
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Core/bin/Debug/netstandard2.0/TodoApp.Core.pdb
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Core/obj/Debug/netstandard2.0/TodoApp.Core.dll
+/Users/judemartin/Documents/Projects/AppExcercises/xamarin-native-users/Libraries/AppExercise.Core/obj/Debug/netstandard2.0/TodoApp.Core.pdb
