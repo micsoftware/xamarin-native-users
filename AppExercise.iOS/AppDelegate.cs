@@ -1,4 +1,10 @@
-﻿using Foundation;
+﻿using AppExercise.Core;
+using AppExercise.Core.Interface;
+using AppExercise.Services.Todo;
+using AppExercise.Services.Users;
+using Foundation;
+using MvvmCross;
+using MvvmCross.Platforms.Ios.Core;
 using UIKit;
 
 namespace AppExercise.iOS
@@ -6,36 +12,16 @@ namespace AppExercise.iOS
     // The UIApplicationDelegate for the application. This class is responsible for launching the
     // User Interface of the application, as well as listening (and optionally responding) to application events from iOS.
     [Register("AppDelegate")]
-    public class AppDelegate : UIResponder, IUIApplicationDelegate
+    public class AppDelegate : MvxApplicationDelegate<MvxIosSetup<App>, App>
     {
 
-        [Export("window")]
-        public UIWindow Window { get; set; }
-
-        [Export("application:didFinishLaunchingWithOptions:")]
-        public bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
+        public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
-            // Override point for customization after application launch.
-            // If not required for your application you can safely delete this method
-            return true;
-        }
+            var result = base.FinishedLaunching(application, launchOptions);
 
-        // UISceneSession Lifecycle
+            Mvx.IoCProvider.RegisterSingleton<IUserService>(new UserService());
 
-        [Export("application:configurationForConnectingSceneSession:options:")]
-        public UISceneConfiguration GetConfiguration(UIApplication application, UISceneSession connectingSceneSession, UISceneConnectionOptions options)
-        {
-            // Called when a new scene session is being created.
-            // Use this method to select a configuration to create the new scene with.
-            return UISceneConfiguration.Create("Default Configuration", connectingSceneSession.Role);
-        }
-
-        [Export("application:didDiscardSceneSessions:")]
-        public void DidDiscardSceneSessions(UIApplication application, NSSet<UISceneSession> sceneSessions)
-        {
-            // Called when the user discards a scene session.
-            // If any sessions were discarded while the application was not running, this will be called shortly after `FinishedLaunching`.
-            // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+            return result;
         }
     }
 }

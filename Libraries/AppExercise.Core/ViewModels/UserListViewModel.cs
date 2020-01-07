@@ -43,13 +43,13 @@ namespace AppExercise.Core.ViewModels
 
             Users = result.Select((User arg) => new UserItemModel(arg)
             {
-                InfoAction =  (obj) => 
-                {
+                InfoAction = (obj) =>
+               {
 
-                },
-                MoreAction =  (obj) => 
-                {
-                },
+               },
+                MoreAction = (obj) =>
+               {
+               },
             }).ToList();
             //dialogService.DismissProgress(dialog);
         }
@@ -70,7 +70,7 @@ namespace AppExercise.Core.ViewModels
 
         public override void Start()
         {
-            base.Start(); 
+            base.Start();
         }
 
         public override void ViewAppeared()
@@ -93,15 +93,11 @@ namespace AppExercise.Core.ViewModels
         {
             get
             {
-                return new MvxCommand(async () => 
+                return new MvxCommand(async () =>
                 {
                     await _navigationService.Navigate<CreateUserViewModel>();
                 });
             }
         }
-
-
-
-
     }
 }

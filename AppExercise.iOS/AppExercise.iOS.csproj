@@ -68,6 +68,12 @@
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
+      <PackageReference Include="MvvmCross">
+        <Version>6.4.2</Version>
+      </PackageReference>
+      <PackageReference Include="Cirrious.FluentLayout">
+        <Version>2.9.0</Version>
+      </PackageReference>
     </ItemGroup>
     <ItemGroup>
         <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
@@ -115,10 +121,7 @@
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Resources\" />
-    </ItemGroup>
-    <ItemGroup>
-        <InterfaceDefinition Include="LaunchScreen.storyboard" />
-        <InterfaceDefinition Include="Main.storyboard" />
+        <Folder Include="Views\" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Info.plist" />
@@ -127,11 +130,22 @@
     <ItemGroup>
         <Compile Include="Main.cs" />
         <Compile Include="AppDelegate.cs" />
-        <Compile Include="SceneDelegate.cs" />
-        <Compile Include="ViewController.cs" />
-        <Compile Include="ViewController.designer.cs">
-            <DependentUpon>ViewController.cs</DependentUpon>
-        </Compile>
+        <Compile Include="LinkerPleaseInclude.cs" />
+        <Compile Include="Views\UsersView.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Libraries\AppExercise.Core\AppExercise.Core.csproj">
+        <Project>{32246E99-5B82-44CB-8828-94E6DE4DF817}</Project>
+        <Name>AppExercise.Core</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Libraries\AppExercise.Data.InMemory\AppExercise.Data.InMemory.csproj">
+        <Project>{B5AD46EE-524F-4104-8D74-53CA48C6AA98}</Project>
+        <Name>AppExercise.Data.InMemory</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Libraries\AppExercise.Services\AppExercise.Services.csproj">
+        <Project>{C9919B0F-513A-4AC8-98BC-E8AB6F008109}</Project>
+        <Name>AppExercise.Services</Name>
+      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
