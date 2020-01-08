@@ -1,8 +1,7 @@
-﻿using System;
-using AppExercise.Core.ViewModels;
+﻿using AppExercise.Core.ViewModels;
+using AppExercise.iOS.Theme;
 using Cirrious.FluentLayouts.Touch;
 using Foundation;
-using MvvmCross.Binding.BindingContext;
 using MvvmCross.Platforms.Ios.Presenters.Attributes;
 using MvvmCross.Platforms.Ios.Views;
 using UIKit;
@@ -15,11 +14,30 @@ namespace AppExercise.iOS.Views
     {
         public override void ViewDidLoad()
         {
-            View.BackgroundColor = UIColor.Green;
-
+            View.BackgroundColor = UIColor.White;
             View.SubviewsDoNotTranslateAutoresizingMaskIntoConstraints();
+            NavigationController.NavigationBar.BarTintColor = Colors.StrongBlue;
+            NavigationItem.TitleView = new UILabel
+            {
+                Text = "Exercise",
+                TextColor = UIColor.White,
+                Font = UIFont.BoldSystemFontOfSize(17)
+            };
 
-            base.ViewDidLoad();
+            var HeaderView = new UIView
+            {
+                TranslatesAutoresizingMaskIntoConstraints = false,
+                
+            };
+
+            var LabelTitle = new UILabel()
+            {
+                Text = "Exercise",
+                TextAlignment = UITextAlignment.Center,
+                TextColor = UIColor.White,
+                AdjustsFontSizeToFitWidth = true,
+                TranslatesAutoresizingMaskIntoConstraints = false
+            };
         }
     }
 }
