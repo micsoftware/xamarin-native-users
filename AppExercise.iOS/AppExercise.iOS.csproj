@@ -123,6 +123,7 @@
         <Folder Include="Resources\" />
         <Folder Include="Views\" />
         <Folder Include="AppExerciseTheme\" />
+        <Folder Include="Views\Cells\" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Info.plist" />
@@ -136,6 +137,8 @@
         <Compile Include="AppExerciseTheme\Colors.cs" />
         <Compile Include="Extensions.cs" />
         <Compile Include="AppExerciseTheme\Fonts.cs" />
+        <Compile Include="Views\Cells\UserCell.cs" />
+        <Compile Include="Views\UserAddView.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\Libraries\AppExercise.Core\AppExercise.Core.csproj">

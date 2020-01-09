@@ -1,7 +1,10 @@
-﻿using AppExercise.Core.ViewModels;
+﻿using System;
+using AppExercise.Core.ViewModels;
 using AppExercise.iOS.Theme;
 using Cirrious.FluentLayouts.Touch;
 using Foundation;
+using MvvmCross.Binding.BindingContext;
+using MvvmCross.Platforms.Ios.Binding.Views;
 using MvvmCross.Platforms.Ios.Presenters.Attributes;
 using MvvmCross.Platforms.Ios.Views;
 using UIKit;
@@ -10,7 +13,7 @@ namespace AppExercise.iOS.Views
 {
     [Register(nameof(UsersView))]
     [MvxRootPresentation(WrapInNavigationController = true)]
-    public class UsersView : MvxViewController<UserListViewModel>
+    public class UsersView : MvxTableViewController<UserListViewModel>
     {
         public override void ViewDidLoad()
         {
@@ -24,20 +27,35 @@ namespace AppExercise.iOS.Views
                 Font = UIFont.BoldSystemFontOfSize(17)
             };
 
-            var HeaderView = new UIView
+            NavigationItem.RightBarButtonItem = new UIBarButtonItem
             {
-                TranslatesAutoresizingMaskIntoConstraints = false,
-                
-            };
+                Image = new UIImage("icon_add"),
 
-            var LabelTitle = new UILabel()
-            {
-                Text = "Exercise",
-                TextAlignment = UITextAlignment.Center,
-                TextColor = UIColor.White,
-                AdjustsFontSizeToFitWidth = true,
-                TranslatesAutoresizingMaskIntoConstraints = false
             };
+            var set = this.CreateBindingSet<UsersView, UserListViewModel>();
+            NavigationItem.RightBarButtonItem.Clicked += CreateUserEventHandler;
         }
+
+        private void CreateUserEventHandler(object sender, EventArgs e)
+        {
+            Console.WriteLine("Create User Event Handler");
+            ViewModel.CreateNewCommand.Execute(); 
+        }
+
+        //public class UsersTableSource : MvxTableViewSource
+        //{
+        //    private static readonly NSString UserCellIdentifier = new NSString("UserCell");
+        //    public UsersTableSource(UITableView tableView) : base(tableView)
+        //    {
+        //        tableView.SeparatorStyle = UITableViewCellSeparatorStyle.SingleLine;
+        //        tableView.RegisterNibForCellReuse(UINib.FromName("UserCell", NSBundle.MainBundle), UserCellIdentifier);
+        //    }
+
+        //    protected override UITableViewCell GetOrCreateCellFor(UITableView tableView, NSIndexPath indexPath, object item)
+        //    {
+
+        //        throw new System.NotImplementedException();
+        //    }
+        //}
     }
 }

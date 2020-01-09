@@ -89,11 +89,11 @@ namespace AppExercise.Core.ViewModels
 
 
 
-        public System.Windows.Input.ICommand CreateNewCommand
+        public IMvxAsyncCommand CreateNewCommand
         {
             get
             {
-                return new MvxCommand(async () =>
+                return new MvxAsyncCommand(async () =>
                 {
                     await _navigationService.Navigate<CreateUserViewModel>();
                 });
